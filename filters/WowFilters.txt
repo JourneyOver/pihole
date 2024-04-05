@@ -1,5 +1,5 @@
 ! Title: 🎛 WoW Filters
-! Version: 04April2024v1
+! Version: 04April2024v2
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -30,3 +30,4 @@ warcraftlogs.com##div.content-with-sidebar:style(grid-template-columns: auto !im
 archon.gg##[class*="Advertisements_advertisements_"]
 archon.gg##[class*="ArchonLayout_stickyFooterAd_"]
 archon.gg##[class*="Article_stickyFooterAd_"]
+archon.gg##[class*="ArchonLayout_containerWithAds_"]:style(grid-template-columns: auto !important)

@@ -1,5 +1,5 @@
 ! Title: 🎛 WoW Filters
-! Version: 24March2024v2
+! Version: 04April2024v1
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -18,11 +18,15 @@ wowlazymacros.com##.banner-box
 wowlazymacros.com##[href*="exitl.ag"],[href*="zygorguides.com"]
 
 ! Removes "disable adblock" notice on warcraftlogs
-warcraftlogs.com##.ad-placement
-warcraftlogs.com##.ad-placement-sticky-footer
+warcraftlogs.com##.side-rail-ads
 warcraftlogs.com###subscription-message-tile-container
+warcraftlogs.com###gear-box-ad
+warcraftlogs.com##[class*="--sideRail"]
+warcraftlogs.com##[class*="-sticky-footer"]
+warcraftlogs.com##div.content-with-sidebar:style(grid-template-columns: auto !important)
+*$script,3p,redirect-rule=noopjs,domain=warcraftlogs.com
 
 ! Removes "disable adblock" notice on archon
-archon.gg##.Advertisements_advertisements__xYKmM
-archon.gg##.ArchonLayout_stickyFooterAd__96TDR
-archon.gg##.Article_stickyFooterAd__pQ8N0
+archon.gg##[class*="Advertisements_advertisements_"]
+archon.gg##[class*="ArchonLayout_stickyFooterAd_"]
+archon.gg##[class*="Article_stickyFooterAd_"]

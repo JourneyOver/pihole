@@ -1,5 +1,5 @@
 ! Title: 🎛 WoW Filters
-! Version: 04April2024v2
+! Version: 02June2024v1
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -10,6 +10,8 @@ raider.io##.fresnel-greaterThan-sm.fresnel-container > .slds-m-bottom--medium
 ! Removes ad containers on wago.io
 wago.io##.wago-in-article-ad-container
 wago.io##.wago-recovery-container:has-text(Ad blocker detected)
+wago.io##.wago-ad-container
+wago.io##.side-bar:has-text(Advertisement)
 
 ! Removes a few annoyances on wowlazymacros
 ||twitch.tv^$3p,domain=wowlazymacros.com

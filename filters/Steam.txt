@@ -1,0 +1,7 @@
+! Title: Steam stuff
+! Version: 08August2024v1
+! Expires: 5 days
+! —————————————————————————————————————————
+
+! Steam Reviews Cleaner | This removes non English too... Add more if you find them
+store.steampowered.com##.review_box:has-text(/因为这是|你要是真让|杀时间利器|差强人意| 好玩 优秀 |赞|目|Nobody reads the reviews anyways, so i'll just say i'm gay|Nobody will read my review, so I'll just say I'm gay|No one is going to read this comment so i'm just going to say that i'm gay|so I'll write that I'm gay|No ones gonna read this so I'm just gonna say it, I'm gay.|Got a cat here.|Here I will leave the cat|My buddy said that if I get|so I will write that I am gay|gay|I will leave the cat here|thumbs up and awards|Nobody will read my review|give it a thumbs up|will read this|CAW CAW/i)

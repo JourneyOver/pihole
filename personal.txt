@@ -1,11 +1,12 @@
 ! Title: 🏡 Personal List
-! Version: 24March2024v1-Personal
+! Version: 08August2024v1-Personal
 ! Expires: 12 hours
 ! —————————————————————————————————————————
 
 ! Start Sublists
 !#include filters/Reddit.txt
 !#include filters/RickrollLinkIdentifier.txt
+!#include filters/Steam.txt
 !#include filters/TA.txt
 !#include filters/TRN.txt
 !#include filters/WowFilters.txt

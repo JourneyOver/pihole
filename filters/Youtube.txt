@@ -1,5 +1,5 @@
 ! Title: ▶️ Youtube stuff
-! Version: 24March2024v1
+! Version: 08August2024v1
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -30,3 +30,10 @@ youtube.com###chat-container
 
 ! Remove Youtube Ads embedded at the top row of related videos
 youtube.com##.ytd-ad-slot-renderer
+
+! ==================> YouTube Comments Cleaner | This removes those bot comments & More <==================
+! Taken from https://github.com/misspent/uBlock-Origin-Information
+! Applies to main comments | (Add "\" before the "'" to make it apply: I\’m subbed) & Comment replies
+youtube.com##ytd-page-manager ytd-watch-flexy #primary.ytd-watch-flexy #comment:has-text(/I\'m subbing | I\’m subbed|Buy ONE Get ONE FREE|use my code|Don\'t forget to visit|The sponsor|first purchase|Subscribe|Download/i):upward(ytd-comment-thread-renderer)
+! Only applies to replies of comments
+youtube.com##ytd-page-manager ytd-watch-flexy #primary.ytd-watch-flexy ytd-comment-thread-renderer #expander-contents ytd-comment-view-model:has-text(/Here is new fu | Here is the fu | This is the clip | Finally it’s here | Finally Here is the fu | Telegram | Teleegram | I forgot to close the camera | LETS BE HONEST WE ALL REMEMBER | ТАР 0N MY РIC | I upload funny | read my name | Read My Profile | you will see it | Claim your prize | Link to the clip | MY CONTENT IS SO | Look at my banner | Lucky prize winners | IM SUBBING EVERYONE | DONT READ MY PROFILE | JJ said my music was fire on my page |first purchase|Don\'t translate| translate | My content is | are better than|Django|your dad|I WANT TO BE THE MOST|parents said if I hit|SI TNETNOC YM|oediv retteb ekam|retteb si tnetnoc ym|content is better|erutam era sdiK|UTTP|UTTP|RETTEB YAW SI TNETNOC|erutam era sdiK|IS WAY BETTER|IN MY SERVER|THERE IS A VIDEO|ailihpodep ezilamroN|I AM WAY BETTER|CONTENT IS BETTER|videos are better|Tis a bot|shut up bot|in a video|Its finally completed|youtu.be|I MADE A DISS TRACK|use my code|Hi guys|DO NOT REDEEM|WHY DID YOU REDEE/)

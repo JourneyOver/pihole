@@ -1,5 +1,5 @@
 ! Title: ▶️ Youtube stuff
-! Version: 07October2024v1
+! Version: 07October2024v2
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -16,7 +16,7 @@ youtube.com##+js(set, ytplayer.config.args.raw_player_response.adPlacements, [])
 youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
 
 ! Block youtube end cards
-||youtube.com/s/player/*/player_ias.vflset/*/endscreen.js^$script
+youtube.com##.ytp-ce-element-show
 
 ! Hides certain Youtube Playlists
 youtube.com##ytd-compact-playlist-renderer:has(> a[href*="&list=PLMFoDoF5WCjivNyZjSOWfzjD4TyFbvqhu"])

@@ -1,5 +1,5 @@
 ! Title: ▶️ Youtube stuff
-! Version: 07October2024v2
+! Version: 18October2024v1
 ! Expires: 5 days
 ! —————————————————————————————————————————
 
@@ -30,6 +30,17 @@ youtube.com###chat-container
 
 ! Remove Youtube Ads embedded at the top row of related videos
 youtube.com##.ytd-ad-slot-renderer
+
+! remove pink fade from youtube playback progress bar
+youtube.com##.ytp-cairo-refresh-signature-moments .ytp-play-progress:style(background: #FF0000 !important;)
+youtube.com##ytd-thumbnail-overlay-resume-playback-renderer[enable-refresh-signature-moments-web] #progress.ytd-thumbnail-overlay-resume-playback-renderer:style(background: #FF0000 !important;)
+
+! remove background transparency from youtube title bar
+youtube.com##hmtl, [light]:style(--yt-frosted-glass-desktop: rgba(255, 255, 255, 1.0) !important;)
+youtube.com##hmtl[dark], [dark]:style(--yt-frosted-glass-desktop: rgba(15, 15, 15, 1.0) !important;)
+
+! change color of youtube logo
+youtube.com###logo-icon > .yt-spec-icon-shape.yt-icon.style-scope.yt-icon-shape > div > svg > g:first-of-type > path:first-of-type:style(fill: #FF0000 !important;)
 
 ! ==================> YouTube Comments Cleaner | This removes those bot comments & More <==================
 ! Taken from https://github.com/misspent/uBlock-Origin-Information
